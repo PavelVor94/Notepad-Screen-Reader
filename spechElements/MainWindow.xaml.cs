@@ -43,7 +43,7 @@ namespace spechElements
             speechSynth = new SpeechSynthesizer(); 
 
             speechSynth.Volume = 100;
-            speechSynth.Rate = 5;
+            speechSynth.Rate = 2;
 
         }
 
@@ -62,7 +62,7 @@ namespace spechElements
 
                 
 
-                // проверяем что бы элемент вызваший событие изменения фокуса был из окна notepad
+                // проверяем что бы элемент вызвавший событие изменения фокуса был из окна notepad
                 if (element.Current.ProcessId == Process.GetProcessesByName("notepad")[0].Id && text_focus != last_focus)
                 {
                     last_focus = text_focus;
